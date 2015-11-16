@@ -11,5 +11,10 @@
         {
             return text.ToLower();
         }
+
+        public static string Normalize(string text)
+        {
+            return text.Normalize();
+        }
     }
 }
