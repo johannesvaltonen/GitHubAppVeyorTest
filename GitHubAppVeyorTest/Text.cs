@@ -16,5 +16,10 @@
         {
             return text.Normalize();
         }
+
+        public static string Trim(string text)
+        {
+            return text.Trim();
+        }
     }
 }
