@@ -22,5 +22,14 @@ namespace GitHubAppVeyorTest.Tests
 
             Assert.AreEqual(text.ToLower(), result);
         }
+
+        [TestMethod]
+        public void Trim()
+        {
+            const string text = " SomeThing ";
+            string result = Text.Trim(text);
+
+            Assert.AreEqual(text.Trim(), result);
+        }
     }
 }

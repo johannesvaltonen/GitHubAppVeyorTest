@@ -1,4 +1,6 @@
-﻿namespace GitHubAppVeyorTest
+﻿using AutoMapper;
+
+namespace GitHubAppVeyorTest
 {
     public class Text
     {
@@ -19,6 +21,7 @@
 
         public static string Trim(string text)
         {
+            Mapper.AssertConfigurationIsValid();
             return text.Trim();
         }
     }
